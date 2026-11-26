@@ -40,11 +40,12 @@
       <div class="form-field">
         <label for="page-search-input" class="muted">Search InfoWeb</label>
         <input id="page-search-input" type="search" placeholder="Search query" aria-label="Search query">
-        <a class="btn" href="#">Search</a>
+        <button id="page-search-btn" class="btn" type="button">Search</button>
       </div>
 
       <h2>Results</h2>
-      <ul>
+      <p id="search-count" class="muted"></p>
+      <ul id="search-results">
         <li><a href="article.html">Designing for clarity</a></li>
         <li><a href="writing.html">Writing for the web</a></li>
       </ul>
@@ -79,5 +80,6 @@
       &copy; 2024 InfoWeb. All rights reserved.
     </div>
   </footer>
+  <script src="assets/js/search.js"></script>
 </body>
 </html>
