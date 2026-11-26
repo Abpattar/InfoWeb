@@ -38,11 +38,13 @@
   <main class="container">
   <div class="card max-card">
       <h1>Feedback & Suggestions</h1>
-      <div class="form-field">
-        <label for="feedback-text">Your feedback</label>
-        <textarea id="feedback-text" name="feedback" rows="6" required></textarea>
-      </div>
-      <a class="btn" href="#">Send feedback</a>
+      <form id="feedback-form" action="#" method="post">
+        <div class="form-field">
+          <label for="feedback-text">Your feedback</label>
+          <textarea id="feedback-text" name="feedback" rows="6" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send feedback</button>
+      </form>
     </div>
   </main>
 
@@ -75,5 +77,6 @@
     </div>
   </footer>
   <script src="assets/js/search.js"></script>
+  <script src="assets/js/forms.js"></script>
 </body>
 </html>
