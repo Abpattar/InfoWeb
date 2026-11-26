@@ -87,10 +87,11 @@
       <div class="card">
         <h4>Newsletter</h4>
         <p>Sign up for monthly updates.</p>
-        <div class="form-field">
-          <input placeholder="Email address">
-          <a class="btn" href="#">Subscribe</a>
-        </div>
+        <form id="newsletter-form" class="form-field" novalidate>
+          <input id="newsletter-email" type="email" placeholder="Email address" aria-label="Newsletter email address" required>
+          <button class="btn" type="submit">Subscribe</button>
+          <p id="newsletter-status" class="muted" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </aside>
   </main>
@@ -124,5 +125,6 @@
       </div>
   </footer>
   <script src="assets/js/search.js"></script>
+  <script src="assets/js/newsletter.js"></script>
 </body>
 </html>
